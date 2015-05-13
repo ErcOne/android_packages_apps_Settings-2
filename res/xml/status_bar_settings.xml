@@ -20,7 +20,7 @@
         android:title="@string/status_bar_title">
 
         <PreferenceScreen
-            android:fragment="com.android.settings.bliss.StatusBarClockStyle"
+            android:fragment="com.android.settings.auzone.StatusBarClockStyle"
             android:key="clock_style_pref"
             android:title="@string/status_bar_clock" />
 
@@ -28,10 +28,10 @@
             android:key="status_bar_battery_status_settings"
             android:title="@string/status_bar_battery_status_settings_title"
             android:summary="@string/status_bar_battery_status_settings_summary"
-            android:fragment="com.android.settings.bliss.StatusBarBatteryStatusSettings" />
+            android:fragment="com.android.settings.auzone.StatusBarBatteryStatusSettings" />
 
         <PreferenceScreen
-            android:fragment="com.android.settings.bliss.BatteryStyle"
+            android:fragment="com.android.settings.auzone.BatteryStyle"
             android:key="battery_style_pref"
             android:defaultValue="0"
             android:title="@string/battery_bar_settings" />
@@ -63,7 +63,7 @@
 
         <PreferenceScreen
             android:key="network_traffic_state"
-            android:fragment="com.android.settings.bliss.NetworkTraffic"
+            android:fragment="com.android.settings.auzone.NetworkTraffic"
             android:summary="@string/network_traffic_summary"
             android:title="@string/network_traffic_title" />
 
@@ -71,13 +71,13 @@
             android:key="status_bar_signal_settings"
             android:title="@string/status_bar_signal_settings_title"
             android:summary="@string/status_bar_signal_settings_summary"
-            android:fragment="com.android.settings.bliss.StatusBarSignalSettings" />
+            android:fragment="com.android.settings.auzone.StatusBarSignalSettings" />
 
         <PreferenceScreen
             android:key="status_bar_notif_system_icons_settings"
             android:title="@string/status_bar_notif_system_icons_settings_title"
             android:summary="@string/status_bar_notif_system_icons_settings_summary"
-            android:fragment="com.android.settings.bliss.StatusBarNotifSystemIconsSettings" />
+            android:fragment="com.android.settings.auzone.StatusBarNotifSystemIconsSettings" />
 
     <PreferenceCategory
         android:title="@string/breathing_notifications_title">
@@ -107,7 +107,7 @@
     
     <PreferenceScreen
             android:key="carrier_options"
-            android:fragment="com.android.settings.bliss.CarrierLabel"
+            android:fragment="com.android.settings.auzone.CarrierLabel"
             android:title="@string/carrier_options" />
 
     </PreferenceCategory>
@@ -115,17 +115,17 @@
     <PreferenceCategory
             android:title="@string/status_bar_logo_category_title">
 
-        <!-- Status bar Bliss logo -->
+        <!-- Status bar auzone logo -->
        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-            android:key="status_bar_bliss_logo"
-            android:title="@string/status_bar_bliss_logo_title"
-            android:summary="@string/status_bar_bliss_logo_summary" />
+            android:key="status_bar_auzone_logo"
+            android:title="@string/status_bar_auzone_logo_title"
+            android:summary="@string/status_bar_auzone_logo_summary" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="status_bar_bliss_logo_color"
-            android:title="@string/status_bar_bliss_logo_color"
+            android:key="status_bar_auzone_logo_color"
+            android:title="@string/status_bar_auzone_logo_color"
             android:defaultValue="0xffffffff"
-            android:dependency="status_bar_bliss_logo" />
+            android:dependency="status_bar_auzone_logo" />
 
     </PreferenceCategory>
 

@@ -46,7 +46,7 @@ import android.view.KeyEvent;
 import android.view.WindowManagerGlobal;
 
 import com.android.internal.util.cm.ScreenType;
-import com.android.internal.util.bliss.blissUtils;
+import com.android.internal.util.auzone.auzoneUtils;
 import com.android.settings.cyanogenmod.ButtonBacklightBrightness;
 
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -555,7 +555,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private void updateNavBarSettings() {
         boolean enableNavigationBar = Settings.Secure.getInt(getContentResolver(),
                 Settings.Secure.NAVIGATION_BAR_SHOW,
-                blissUtils.isNavBarDefault(getActivity()) ? 1 : 0) == 1;
+                auzoneUtils.isNavBarDefault(getActivity()) ? 1 : 0) == 1;
         mEnableNavigationBar.setChecked(enableNavigationBar);
 
         updateNavbarPreferences(enableNavigationBar);

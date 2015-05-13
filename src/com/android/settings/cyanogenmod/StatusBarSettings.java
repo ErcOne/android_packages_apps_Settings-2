@@ -54,12 +54,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
     private static final String TAG = "StatusBar";
 
-    private static final String KEY_BLISS_LOGO_COLOR = "status_bar_bliss_logo_color";
+    private static final String KEY_AUZONE_LOGO_COLOR = "status_bar_auzone_logo_color";
     private static final String KEY_STATUS_BAR_GREETING = "status_bar_greeting";
     private static final String KEY_STATUS_BAR_GREETING_TIMEOUT = "status_bar_greeting_timeout";
     private static final String KEY_CARRIERLABEL_PREFERENCE = "carrier_options";
 
-    private ColorPickerPreference mBlissLogoColor;
+    private ColorPickerPreference mAuzoneLogoColor;
     private SwitchPreference mStatusBarGreeting;
     private SeekBarPreferenceCham mStatusBarGreetingTimeout;
     private PreferenceScreen mCarrierLabel;
@@ -78,16 +78,16 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             removePreference(Settings.System.STATUS_BAR_MSIM_SHOW_EMPTY_ICONS);
         }
 
-        // Bliss logo color
-        mBlissLogoColor =
-            (ColorPickerPreference) prefSet.findPreference(KEY_BLISS_LOGO_COLOR);
-        mBlissLogoColor.setOnPreferenceChangeListener(this);
+        // Auzone logo color
+        mAuzoneLogoColor =
+            (ColorPickerPreference) prefSet.findPreference(KEY_AUZONE_LOGO_COLOR);
+        mAuzoneLogoColor.setOnPreferenceChangeListener(this);
         int intColor = Settings.System.getInt(getContentResolver(),
-                Settings.System.STATUS_BAR_BLISS_LOGO_COLOR, 0xffffffff);
+                Settings.System.STATUS_BAR_AUZONE_LOGO_COLOR, 0xffffffff);
         String hexColor = String.format("#%08x", (0xffffffff & intColor));
-            mBlissLogoColor.setSummary(hexColor);
-            mBlissLogoColor.setNewPreviewColor(intColor);
-			mBlissLogoColor.setAlphaSliderEnabled(true);
+            mAuzoneLogoColor.setSummary(hexColor);
+            mAuzoneLogoColor.setNewPreviewColor(intColor);
+			mAuzoneLogoColor.setAlphaSliderEnabled(true);
 
         // Greeting
         mStatusBarGreeting = (SwitchPreference) prefSet.findPreference(KEY_STATUS_BAR_GREETING);
@@ -118,13 +118,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-         if (preference == mBlissLogoColor) {
+         if (preference == mAuzoneLogoColor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
             preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getContentResolver(),
-                    Settings.System.STATUS_BAR_BLISS_LOGO_COLOR, intHex);
+                    Settings.System.STATUS_BAR_AUZONE_LOGO_COLOR, intHex);
             return true;
         } else if (preference == mStatusBarGreetingTimeout) {
             int timeout = (Integer) newValue;

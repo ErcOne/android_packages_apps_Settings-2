@@ -22,9 +22,9 @@
         android:title="@string/contest_category">
 
         <Preference
-            android:key="contest_bliss"
-            android:title="@string/contest_bliss_title"
-            android:summary="@string/contest_bliss_summary" />
+            android:key="contest_auzone"
+            android:title="@string/contest_auzone_title"
+            android:summary="@string/contest_auzone_summary" />
 
     </PreferenceCategory>
 -->
@@ -33,9 +33,9 @@
         android:title="@string/support_category">
 
     <Preference
-        android:key="support_bliss"
-        android:title="@string/support_bliss_title"
-        android:summary="@string/support_bliss_summary" />
+        android:key="support_auzone"
+        android:title="@string/support_auzone_title"
+        android:summary="@string/support_auzone_summary" />
 
     </PreferenceCategory>    
 
@@ -44,14 +44,14 @@
         android:title="@string/rom_category">
 
     <Preference
-        android:key="bliss_official"
-        android:title="@string/bliss_official_title"
-        android:summary="@string/bliss_official_summary" />
+        android:key="auzone_official"
+        android:title="@string/auzone_official_title"
+        android:summary="@string/auzone_official_summary" />
 
     <Preference
-        android:key="bliss_nightly"
-        android:title="@string/bliss_nightly_title"
-        android:summary="@string/bliss_nightly_summary" />	
+        android:key="auzone_nightly"
+        android:title="@string/auzone_nightly_title"
+        android:summary="@string/auzone_nightly_summary" />	
 
     </PreferenceCategory>
 
@@ -76,7 +76,7 @@
         android:title="@string/kernels_category">
 
     <Preference
-        android:key="bliss_kernels"
+        android:key="auzone_kernels"
         android:title="@string/kernels_title"
         android:summary="@string/kernels_summary" />
 

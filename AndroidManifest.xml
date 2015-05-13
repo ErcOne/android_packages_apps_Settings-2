@@ -156,7 +156,7 @@
         </activity>
 
         <activity
-            android:name=".bliss.SlimActionShortcut"
+            android:name=".auzone.SlimActionShortcut"
             android:theme="@android:style/Theme.NoDisplay"
             android:excludeFromRecents="true"
             android:launchMode="singleInstance" >
@@ -1996,7 +1996,7 @@
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.bliss.NavBar" />
+                       android:value="com.android.settings.auzone.NavBar" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                        android:resource="@id/security_settings" />
         </activity-alias>
@@ -2010,7 +2010,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.bliss.ambientdisplay.AmbientSettings" />
+                android:value="com.android.settings.auzone.ambientdisplay.AmbientSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/display_and_lights_settings" />
         </activity>
@@ -2025,19 +2025,19 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.bliss.AppCircleBar" />
+                android:value="com.android.settings.auzone.AppCircleBar" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/security_settings" />
         </activity>
 
-        <activity-alias android:name="com.android.settings.bliss.AppCircleBar"
+        <activity-alias android:name="com.android.settings.auzone.AppCircleBar"
                 android:taskAffinity="com.android.settings"
                 android:label="@string/app_circle_bar_title"
                 android:targetActivity="Settings$AppCircleBarActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.bliss.AppCircleBar" />
+                       android:value="com.android.settings.auzone.AppCircleBar" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                        android:resource="@id/security_settings" />
         </activity-alias>
@@ -2051,7 +2051,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.bliss.AppSidebar" />
+                android:value="com.android.settings.auzone.AppSidebar" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/display_and_lights_settings" />
         </activity>
@@ -2066,19 +2066,19 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.bliss.gestureanywhere.GestureAnywhereSettings" />
+                android:value="com.android.settings.auzone.gestureanywhere.GestureAnywhereSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/security_settings" />
         </activity>
 
-        <activity-alias android:name="com.android.settings.bliss.gestureanywhere.GestureAnywhereSettings"
+        <activity-alias android:name="com.android.settings.auzone.gestureanywhere.GestureAnywhereSettings"
                 android:taskAffinity="com.android.settings"
                 android:label="@string/gesture_anywhere_title"
                 android:targetActivity="Settings$GestureActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.bliss.gestureanywhere.GestureAnywhereSettings" />
+                       android:value="com.android.settings.auzone.gestureanywhere.GestureAnywhereSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                        android:resource="@id/security_settings" />
         </activity-alias>
@@ -2093,19 +2093,19 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.bliss.HeadsUpSettings" />
+                android:value="com.android.settings.auzone.HeadsUpSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/security_settings" />
         </activity>
 
-        <activity-alias android:name=".bliss.HeadsUpSettings"
+        <activity-alias android:name=".auzone.HeadsUpSettings"
                 android:taskAffinity="com.android.settings"
                 android:label="@string/category_heads_up"
                 android:targetActivity="Settings$HeadsUpSettingsActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.bliss.HeadsUpSettings" />
+                       android:value="com.android.settings.auzone.HeadsUpSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                        android:resource="@id/security_settings" />
         </activity-alias>
@@ -2414,15 +2414,15 @@
 
         <activity android:name=".cyanogenmod.PerformanceSettings" />
 
-        <!-- Bliss Extras -->
-        <activity android:name="com.android.settings.bliss.extrainfo.MainActivity"
+        <!-- auzone Extras -->
+        <activity android:name="com.android.settings.auzone.extrainfo.MainActivity"
                   android:theme="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
 	
-        <activity android:name=".bliss.Download" />	
+        <activity android:name=".auzone.Download" />	
         <activity
             android:name=".fragments.AnimationControls"
             android:label="@string/title_animation_controls">
@@ -2433,14 +2433,14 @@
         </activity>
 
         <!-- Gesture Anywhere -->
-        <activity android:name=".bliss.gestureanywhere.GestureAnywhereBuilderActivity" />
-        <activity android:name=".bliss.gestureanywhere.GestureAnywhereCreateGestureActivity" />
+        <activity android:name=".auzone.gestureanywhere.GestureAnywhereBuilderActivity" />
+        <activity android:name=".auzone.gestureanywhere.GestureAnywhereCreateGestureActivity" />
         
         <!-- Kernel Adiutor -->
         <activity android:name="com.grarak.kerneladiutor.MainActivity"/>
 
-        <!-- Bliss Roms OTA Update -->
-        <activity android:name="com.chummy.blissroms.updates.activities.MainActivity" />
+        <!-- auzone Roms OTA Update -->
+        <activity android:name="com.chummy.auzoneroms.updates.activities.MainActivity" />
 
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
@@ -2490,23 +2490,23 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name="com.android.settings.bliss.hfm.IntentReceiver" >
+        <receiver android:name="com.android.settings.auzone.hfm.IntentReceiver" >
             <intent-filter>
                  <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
 
-        <service android:name="com.android.settings.bliss.hfm.CheckHosts" />
+        <service android:name="com.android.settings.auzone.hfm.CheckHosts" />
 
-        <activity android:name="com.android.settings.bliss.hfm.HfmWhitelist"
+        <activity android:name="com.android.settings.auzone.hfm.HfmWhitelist"
                   android:label="@string/hfm_whitelist_title"
                   android:taskAffinity="" />
         
-        <service android:name=".bliss.identicons.IdenticonCreationService"
+        <service android:name=".auzone.identicons.IdenticonCreationService"
                  android:exported="false" />
 
-        <service android:name=".bliss.identicons.IdenticonRemovalService"
+        <service android:name=".auzone.identicons.IdenticonRemovalService"
                  android:exported="false" />
 
         <provider

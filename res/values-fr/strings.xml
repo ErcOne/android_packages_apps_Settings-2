@@ -1026,10 +1026,10 @@
     <string name="master_clear_button_text" product="default" msgid="7550632653343157971">"Réinitialiser le téléphone"</string>
     <string name="master_clear_final_desc" msgid="7209547812233487345">"Effacer toutes vos informations personnelles et les applications téléchargées ? Cette action est irréversible."</string>
     <string name="master_clear_final_button_text" msgid="5390908019019242910">"Tout effacer"</string>
-    <string name="master_clear_gesture_explanation" msgid="826193821455182780">"Vous devez dessiner votre schéma de déverrouillage pour confirmer le rétablissement de la configuration d\'usine."</string>
+    <string name="master_clear_gesture_explanation" msgid="826193821455182780">"Vous devez dessiner votre schéma de déverrouillage pour confirmer le rétaauzoneement de la configuration d\'usine."</string>
     <string name="master_clear_failed" msgid="7959646179737950703">"Les données n\'ont pas été réinitialisées, car le service de nettoyage du système n\'est pas disponible."</string>
     <string name="master_clear_confirm_title" msgid="7572642091599403668">"Réinitialiser ?"</string>
-    <string name="master_clear_not_available" msgid="1000370707967468909">"Le rétablissement de la configuration d\'usine n\'est pas disponible pour cet utilisateur."</string>
+    <string name="master_clear_not_available" msgid="1000370707967468909">"Le rétaauzoneement de la configuration d\'usine n\'est pas disponible pour cet utilisateur."</string>
     <string name="master_clear_progress_title" msgid="5194793778701994634">"Suppression en cours"</string>
     <string name="master_clear_progress_text" msgid="6559096229480527510">"Veuillez patienter..."</string>
     <string name="media_format_title" product="nosdcard" msgid="3999653431422767156">"Effacer la mémoire USB"</string>

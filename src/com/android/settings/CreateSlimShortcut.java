@@ -23,10 +23,10 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
-import com.android.internal.util.bliss.ActionHelper;
-import com.android.internal.util.bliss.DeviceUtils;
-import com.android.internal.util.bliss.DeviceUtils.FilteredDeviceFeaturesArray;
-import com.android.settings.bliss.SlimActionShortcut;
+import com.android.internal.util.auzone.ActionHelper;
+import com.android.internal.util.auzone.DeviceUtils;
+import com.android.internal.util.auzone.DeviceUtils.FilteredDeviceFeaturesArray;
+import com.android.settings.auzone.SlimActionShortcut;
 
 import com.android.settings.R;
 
