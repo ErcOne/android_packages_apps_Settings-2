@@ -255,7 +255,7 @@ public class QSColors extends SettingsPreferenceFragment implements
                             getOwner().refreshSettings();
                         }
                     })
-                    .setPositiveButton(R.string.reset_AUZONE,
+                    .setPositiveButton(R.string.reset_auzone,
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             Settings.System.putInt(getOwner().mResolver,
