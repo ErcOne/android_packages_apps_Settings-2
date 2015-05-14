@@ -65,6 +65,8 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
     private static final String KEY_PRIMARY_SUB_SELECT = "select_primary_sub";
 
     private static final int EVT_UPDATE = 1;
+
+    private long mPreferredDataSubscription;
     private int mNumSlots = 0;
 
     /**
