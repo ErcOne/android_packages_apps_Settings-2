@@ -82,7 +82,7 @@
 
     <!-- Download Center -->
     <string name="download_category">Auzone Downloads</string>
-    <string name="download_category_summary">Help Support Team Auzone</string>
+    <string name="download_category_summary">Help to support Team Auzone</string>
     <string name="rom_category">Rom Download</string>
     <string name="gapps_category">Gapps Packages</string>
     <string name="kernels_category">Kernel Downloads</string>
